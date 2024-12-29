@@ -52,7 +52,7 @@ const SignIn = () => {
         </Text>
       </Pressable>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
-        <CustomButton text="Sign In" />
+        <CustomButton text="Sign In" onPress={() => router.push("/home")} />
       </View>
       <View
         style={{

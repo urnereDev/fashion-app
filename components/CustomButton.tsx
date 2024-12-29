@@ -4,11 +4,13 @@ import Colors from "@/constants/Colors";
 
 interface CustomButtonProps {
   text: string;
+  onPress: () => void;
 }
 
-const CustomButton = ({ text }: CustomButtonProps) => {
+const CustomButton = ({ text, onPress }: CustomButtonProps) => {
   return (
     <Pressable
+      onPress={onPress}
       style={{
         backgroundColor: Colors.PRIMARY,
         height: 50,

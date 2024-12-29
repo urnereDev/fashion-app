@@ -38,7 +38,7 @@ export default function Index() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro
         voluptate veritatis possimus.
       </Text>
-      <CustomButton text="Let's Get Started" />
+      <CustomButton text="Let's Get Started" onPress={() => {}} />
       <View style={{ display: "flex", flexDirection: "row" }}>
         <Text style={{ fontFamily: "outfit-m" }}>
           Already have an account?{" "}
