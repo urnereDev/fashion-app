@@ -1,8 +1,9 @@
-import { View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import React from "react";
 import Colors from "@/constants/Colors";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { router } from "expo-router";
 
 const HomeFlashSale = () => {
   return (
@@ -29,7 +30,8 @@ const HomeFlashSale = () => {
           </Text>
         </View>
       </View>
-      <View
+      <Pressable
+        onPress={() => router.push("/product-details")}
         style={{
           width: 150,
           height: 230,
@@ -93,7 +95,7 @@ const HomeFlashSale = () => {
           </Text>
         </View>
         <Text style={{ fontFamily: "outfit-m", fontSize: 20 }}>$85.00</Text>
-      </View>
+      </Pressable>
     </View>
   );
 };
